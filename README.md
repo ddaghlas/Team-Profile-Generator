@@ -58,5 +58,5 @@ and run  `npm run test` from the command line.
   
   For any questions, please contact me with the information below:
 
-  GitHub: [@ddaghlas](https://api.github.com/users/ddaghlas) 
+  GitHub: [@ddaghlas](https://github.com/ddaghlas) 
 
