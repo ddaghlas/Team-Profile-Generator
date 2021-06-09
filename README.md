@@ -11,7 +11,7 @@
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [Tests](#tests)
-  * [Questions](#questions?)
+  * [Questions](#questions)
 
 ## Installation
 
