@@ -38,15 +38,25 @@ node index.js
   ![HTML1](images/generated-html1.png)<br><br>
   ![HTML2](images/generated-html2.png)
 
+
 ## Contributing
   
   Contributions are accepted. Feel free to fork.
 
-## Tests
 
+## Tests
 To run tests on the application, install
 ```md
 npm install jest
 ```
 and run  `npm run test` from the command line.
+
+  ---
+  
+  
+  ## Questions?
+  
+  For any questions, please contact me with the information below:
+
+  GitHub: [@ddaghlas](https://api.github.com/users/ddaghlas) 
 
