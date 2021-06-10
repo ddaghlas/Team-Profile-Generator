@@ -1,9 +1,17 @@
+// node modules 
 const inquirer = require('inquirer');
 const fs = require('fs');
+
+// Link to page creation
 const generatePage = require('./src/page-template.js')
+
+// Link to helper.js
 const formatName = require('./utils/helper');
+
+// Employee array
 const allEmployees = [];
 
+// Created a const for question prompts generated in the command-line
 const questions = [
     {
         type: 'list',
@@ -125,6 +133,7 @@ const questions = [
     }
 ]
 
+// Prompts the user in the command line -- start of the application
 const promptUser = () => {
 
     return inquirer.prompt(questions)
@@ -142,11 +151,14 @@ const promptUser = () => {
     });
 };
 
+// Function to generate HTML page file using file system
 const writePage = (htmlContent) => {
     fs.writeFile('./dist/index.html', htmlContent, err => {
+        // if there is an error
         if (err) {
             throw err
         };
+        // when the profile has been created
         console.log('Page created successfully!');
     });
 };
@@ -155,6 +167,7 @@ console.log(`
 Welcome to the Team Profile Generator!  Let's add some employees!
 `);
 
+// Calling the function to then transfer that data and generate an HTML page -- HTML file in the dist folder
 promptUser()
     .then(data => generatePage(data))
     .then(generatedHtml => writePage(generatedHtml))
